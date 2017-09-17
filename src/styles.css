@@ -1,1 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
+body{
+  background: url('./assets/beer-in-the-glass-photography-hd-wallpaper-1920x1200-36160.jpg') no-repeat 0 0;
+  background-size: 1425px 640px;
+}

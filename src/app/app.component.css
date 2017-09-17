@@ -1,0 +1,27 @@
+article{
+  margin: 4em;
+  width: 68%;
+}
+#local-beer-shops-block, #order-beer-block{
+  width:50%;
+}
+#local-beer-shops-block{
+  display: inline-block;
+}
+#order-beer-block{
+  display: inline;
+}
+button{
+  width: 17em;
+  height: 5em;
+  background-color: transparent;
+  border: 5px solid black;
+  font-size: 1.4em;
+}
+#customize-beer-block{
+  margin: 8em 0 0 15em;
+}
+button:hover{
+  cursor: pointer;
+  background-color: sandybrown;
+}
