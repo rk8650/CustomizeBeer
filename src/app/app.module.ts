@@ -3,14 +3,17 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
-import { RouterModule } from '@angular/router';
-import { LocalBeerShopsComponent } from './beer/local-beer-shops.component'
-import { OrderBeerComponent } from './beer/order-beer.component';
-import { CustomizeBeerComponent } from './beer/customize-beer.component';
+
+import { routes } from './app.router';
+import { HomePageComponent } from './home-page/home-page.component';
+import { LocalBeerShopsComponent } from './local-beer-shops/local-beer-shops.component';
+import { OrderBeerComponent } from './order-beer/order-beer.component';
+import { CustomizeBeerComponent } from './customize-beer/customize-beer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    HomePageComponent,
     LocalBeerShopsComponent,
     OrderBeerComponent,
     CustomizeBeerComponent
@@ -19,11 +22,7 @@ import { CustomizeBeerComponent } from './beer/customize-beer.component';
     BrowserModule,
     FormsModule,
     HttpModule,
-    RouterModule.forRoot([
-      { path : ' local/beer/shops ' , component :  LocalBeerShopsComponent },
-      { path : ' order/beer ' , component : OrderBeerComponent },
-      { path : ' customize/beer ' , component : CustomizeBeerComponent }
-    ])
+    routes
   ],
   providers: [],
   bootstrap: [AppComponent]
