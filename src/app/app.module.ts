@@ -9,6 +9,7 @@ import { HomePageComponent } from './home-page/home-page.component';
 import { LocalBeerShopsComponent } from './local-beer-shops/local-beer-shops.component';
 import { OrderBeerComponent } from './order-beer/order-beer.component';
 import { CustomizeBeerComponent } from './customize-beer/customize-beer.component';
+//import { AppService } from "./app.service";
 
 @NgModule({
   declarations: [

@@ -1,3 +1,17 @@
 <p>
   local-beer-shops works!
 </p>
+<!--<ul *ngFor="let shop of localBeerShopList" >-->
+  <!--<li>{{shop.Name}}</li>-->
+<!--</ul>-->
+<table style="width:100%">
+  <tr>
+    <th>Shop Name</th>
+    <th>Address</th>
+  </tr>
+  <tr *ngFor="let shop of localBeerShopList" >
+    <td>{{shop.Name}}</td>
+    <td>{{shop.Address}}</td>
+  </tr>
+
+</table>
